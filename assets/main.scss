@@ -13,3 +13,15 @@
   max-width: 500px;
   border: 5px solid $main-gold;
 }
+
+.bg-primary {
+  background-color: $navbar-gold !important;
+}
+
+.border-dark {
+  border-color: $navbar-gold !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
