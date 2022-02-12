@@ -2856,12 +2856,15 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
 #what h1 { font-size: 3.5rem; }
 #what #main-pic { width: inherit; border: 5px solid #C9B273; }
 
+#footer p { margin: 0; font-size: 13px; }
+
 .section .text { text-align: justify; }
 
 @media (min-width: 767px) { .section .text { margin-top: 20px; } }
 @media (max-width: 768px) { .section { border-bottom: 1px solid #C9B273; margin-bottom: 20px; }
+  .blockquote { margin: 2rem; }
   #what .text { margin-top: 20px; }
-  .blockquote { margin: 2rem; } }
+  #where { padding-bottom: 2rem; } }
 #where #map { width: inherit; border: 5px solid #C9B273; height: 350px; }
 
 .bg-primary { background-color: #CCAF6E !important; }

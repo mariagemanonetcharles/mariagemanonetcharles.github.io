@@ -21,6 +21,13 @@
   }
 }
 
+#footer {
+  p {
+    margin: 0;
+    font-size: 13px;
+  }
+}
+
 .section {
   .text {
     text-align: justify;
@@ -41,14 +48,18 @@
     margin-bottom: 20px;
   }
 
+  .blockquote {
+    margin: 2rem;
+  }
+
   #what {
     .text {
       margin-top: 20px;
     }
   }
 
-  .blockquote {
-    margin: 2rem;
+  #where {
+    padding-bottom: 2rem;
   }
 }
 
