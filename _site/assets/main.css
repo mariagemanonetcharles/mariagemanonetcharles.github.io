@@ -2858,7 +2858,7 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
 
 .section .text { text-align: justify; }
 
-@media (min-width: 767) { .section .text { margin-top: 30px; } }
+@media (min-width: 767px) { .section .text { margin-top: 20px; } }
 @media (max-width: 768px) { .section { border-bottom: 1px solid #C9B273; margin-bottom: 20px; }
   #what .text { margin-top: 20px; }
   .blockquote { margin: 2rem; } }
