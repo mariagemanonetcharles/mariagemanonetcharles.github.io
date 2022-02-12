@@ -28,10 +28,27 @@
   }
 }
 
+#rsvp-form {
+  border: 2px solid $main-gold;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: auto;
+  padding: 0 30px;
+  margin-bottom: 2rem;
+
+  label {
+    font-weight: 600px !important;
+  }
+}
+
 .section {
   .text {
     text-align: justify;
   }
+}
+
+.btn-block {
+  display: block;
 }
 
 @media (min-width: 767px) {
@@ -43,6 +60,10 @@
 }
 
 @media (max-width: $screen-md-min) {
+  #rsvp-form {
+    padding: 0 20px;
+  }
+
   .section {
     border-bottom: 1px solid $main-gold;
     margin-bottom: 20px;

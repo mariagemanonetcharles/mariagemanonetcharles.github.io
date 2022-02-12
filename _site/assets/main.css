@@ -2858,10 +2858,16 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
 
 #footer p { margin: 0; font-size: 13px; }
 
+#rsvp-form { border: 2px solid #C9B273; border-radius: 15px; max-width: 500px; margin: auto; padding: 0 30px; margin-bottom: 2rem; }
+#rsvp-form label { font-weight: 600px !important; }
+
 .section .text { text-align: justify; }
 
+.btn-block { display: block; }
+
 @media (min-width: 767px) { .section .text { margin-top: 20px; } }
-@media (max-width: 768px) { .section { border-bottom: 1px solid #C9B273; margin-bottom: 20px; }
+@media (max-width: 768px) { #rsvp-form { padding: 0 20px; }
+  .section { border-bottom: 1px solid #C9B273; margin-bottom: 20px; }
   .blockquote { margin: 2rem; }
   #what .text { margin-top: 20px; }
   #where { padding-bottom: 2rem; } }

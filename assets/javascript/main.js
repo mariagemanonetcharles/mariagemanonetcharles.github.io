@@ -9,4 +9,4 @@ function initMap() {
         position: home,
         map: map,
     });
-}
+};
