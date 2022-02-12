@@ -19,8 +19,15 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="/assets/javascript/bootstrap/jquery.min.js"></script>
   <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="/assets/javascript/main.js"></script>
+
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvLVsIuO_uOyjHbLxnIEq0TcNw8zUCvQY&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
 </head>
-<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<body><nav class="navbar navbar-expand-md navbar-dark bg-primary">
   <div class="container">
     <a class="navbar-brand" href="/">Mariage Manon et Charles</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Dérouler le menu déroulant">
@@ -29,22 +36,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#where">Lieu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#details">Détails utiles</a>
-        </li>
-        <li class="nav-item">
           <a class="btn btn-danger" href="#rsvp">Réponse</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="border-bottom container" id="what">
+<div class="container section" id="what">
   <div class="py-3">
     <div class="text-center">
-      <h1>Ils vont se dire OUI !</h1>
+      <h1>Ils vont se dire OUI</h1>
       <h6>... espèrent nos parents</h6>
     </div>
   </div>
@@ -54,17 +55,42 @@
       <img src="/assets/pic.jpeg" id="main-pic"/>
     </div>
 
-    <div class="col-md-6 py-3">
-      <h3 class="text-center">Venez fêter avec nous</h3>
+    <div class="col-md-6 py-3 text">
+      <h3 class="text-center">Venez célébrer avec nous !</h3>
       <p>
         Nous avons choisi cette photo pour nos faire-parts, car c'est la première que nous avons prise comme fiancés <i class="fa fa-heart"></i>.
-        Vous êtes importants pour nous, c'est pourquoi nous souhaitons vous avoir près de nous pour prendre notre première photo comme mariés.
+        Vous êtes importants pour nous, c'est pourquoi nous souhaitons vous avoir près de nous pour prendre notre première photo en tant que jeunes mariés.
       </p>
     </div>
   </div>
 </div>
-<div class="py-4 border-bottom" id="where">
-  <h1 class="text-center">Ici #insert-map</h1>
+<div class="container section" id="where">
+  <div class="row py-3">
+    <div class="col-md-6 py-3 text">
+      <p>
+        La cérémonie et la fête auront lieu chez nous au Canada, à Saint-Blaise-sur-Richelieu. Nous vous enverrons un courriel avec l'horaire et tous les détails pratiques pour vous rendre chez nous.
+      </p>
+
+      <p class="text-center blockquote">
+        1689 rue principale
+        <br>
+        Saint-Blaise-sur-Richelieu
+        <br>
+        J0J 1W0, QC
+        <br>
+      </p>
+
+      <p class="text-center py-3">
+        <button class="btn btn-lg btn-gold" type="button">
+          Cliquez ici pour lancer l'itinéraire dans Google Maps
+        </button>
+      </p>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <div id="map"></div>
+    </div>
+  </div>
 </div>
 <div class="py-4 border-bottom" id="details">
   <h1 class="text-center">details</h1>

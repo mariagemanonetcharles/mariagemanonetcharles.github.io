@@ -8,10 +8,56 @@
 @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
 @import "bootstrap_customization";
 
-#main-pic {
-  width: inherit;
-  max-width: 500px;
-  border: 5px solid $main-gold;
+#what {
+  margin-top: 10px;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  #main-pic {
+    width: inherit;
+    border: 5px solid $main-gold;
+  }
+}
+
+.section {
+  .text {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 767) {
+  .section {
+    .text {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: $screen-md-min) {
+  .section {
+    border-bottom: 1px solid $main-gold;
+    margin-bottom: 20px;
+  }
+
+  #what {
+    .text {
+      margin-top: 20px;
+    }
+  }
+
+  .blockquote {
+    margin: 2rem;
+  }
+}
+
+#where {
+  #map {
+    width: inherit;
+    border: 5px solid $main-gold;
+    height: 350px;
+  }
 }
 
 .bg-primary {
@@ -24,4 +70,9 @@
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-gold {
+  background-color: $main-gold;
+  border-color: $main-gold;
 }

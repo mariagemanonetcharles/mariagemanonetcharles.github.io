@@ -2852,10 +2852,22 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
 
 .card h1, .card h2, .card h3, .card h4, .card h5, .card h6, .list-group-item h1, .list-group-item h2, .list-group-item h3, .list-group-item h4, .list-group-item h5, .list-group-item h6 { color: inherit; }
 
-#main-pic { width: inherit; max-width: 500px; border: 5px solid #C9B273; }
+#what { margin-top: 10px; }
+#what h1 { font-size: 3.5rem; }
+#what #main-pic { width: inherit; border: 5px solid #C9B273; }
+
+.section .text { text-align: justify; }
+
+@media (min-width: 767) { .section .text { margin-top: 30px; } }
+@media (max-width: 768px) { .section { border-bottom: 1px solid #C9B273; margin-bottom: 20px; }
+  #what .text { margin-top: 20px; }
+  .blockquote { margin: 2rem; } }
+#where #map { width: inherit; border: 5px solid #C9B273; height: 350px; }
 
 .bg-primary { background-color: #CCAF6E !important; }
 
 .border-dark { border-color: #CCAF6E !important; }
 
 .navbar-dark .navbar-nav .nav-link { color: rgba(255, 255, 255, 0.8); }
+
+.btn-gold { background-color: #C9B273; border-color: #C9B273; }
