@@ -10,3 +10,32 @@ function initMap() {
         map: map,
     });
 };
+
+/********************** RSVP **********************/
+
+$(window).on('load', function(){
+    $('#rsvp-form').on('submit', function (e) {
+        var data = $(this).serialize();
+        e.preventDefault();
+        console.log(data);
+
+        $.post(
+            'https://script.google.com/macros/s/AKfycbwTIzpepaqLA44-aCnMBrVJI1dUOEhaasSY6GY4EOaoJzBToHEnmpsVgmmxBTxXv92GTg/exec',
+            data)
+            .done(function (data) {
+                console.log(data);
+                if (data.result === "error") {
+                    console.log(data.message)
+                    $("#rsvp-success").addClass("hide");
+                    $("#rsvp-error").removeClass("hide");
+                } else {
+                    $("#rsvp-error").addClass("hide");
+                    $("#rsvp-success").removeClass("hide");
+                }
+            })
+            .fail(function (data) {
+                console.log(data);
+                $("#rsvp-error").removeClass("hide");
+            });
+    });
+})
