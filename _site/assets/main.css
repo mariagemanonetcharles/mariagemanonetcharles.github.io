@@ -2861,6 +2861,8 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
 #rsvp-form { border: 2px solid #C9B273; border-radius: 15px; max-width: 500px; margin: auto; padding: 0 30px; margin-bottom: 2rem; }
 #rsvp-form label { font-weight: 600px !important; }
 
+#rsvp p { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
 .section .text { text-align: justify; }
 
 .btn-block { display: block; }
