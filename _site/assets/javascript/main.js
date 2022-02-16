@@ -19,10 +19,16 @@ $(window).on('load', function(){
         e.preventDefault();
         console.log(data);
 
-        $.post(
-            'https://script.google.com/macros/s/AKfycbwTIzpepaqLA44-aCnMBrVJI1dUOEhaasSY6GY4EOaoJzBToHEnmpsVgmmxBTxXv92GTg/exec',
-            data)
-            .done(function (data) {
+        $.ajax({
+            type: "POST",
+            beforeSend: function(request) {
+                request.setRequestHeader("Access-Control-Allow-Origin", "*");
+            },
+            url: 'https://script.google.com/macros/s/AKfycbzIvgonX4SR_oMJpVZl5C8fnou-g_MeAjfv8JzzeCo-/dev?callback=loadData',
+            // url: 'https://script.google.com/macros/s/AKfycbwTIzpepaqLA44-aCnMBrVJI1dUOEhaasSY6GY4EOaoJzBToHEnmpsVgmmxBTxXv92GTg/exec?callback=loadData',
+            data: data,
+            dataType: "json"
+        }).done(function (data) {
                 console.log(data);
                 if (data.result === "error") {
                     console.log(data.message)
