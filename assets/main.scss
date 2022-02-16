@@ -30,14 +30,20 @@
 
 #rsvp-form {
   border: 2px solid $main-gold;
-  border-radius: 15px;
-  max-width: 500px;
+  border-radius: 5px;
+  max-width: 700px;
   margin: auto;
   padding: 0 30px;
   margin-bottom: 2rem;
 
   label {
     font-weight: 600px !important;
+  }
+
+  small {
+    font-weight: 200;
+    font-size: 50%;
+    text-transform: uppercase;
   }
 }
 
