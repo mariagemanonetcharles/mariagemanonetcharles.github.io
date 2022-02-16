@@ -2872,6 +2872,7 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
   #what .text { margin-top: 20px; }
   #where { padding-bottom: 2rem; } }
 #where #map { width: inherit; border: 5px solid #C9B273; height: 350px; }
+#where .blockquote { font-size: 25px; }
 
 .bg-primary { background-color: #CCAF6E !important; }
 
