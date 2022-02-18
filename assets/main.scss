@@ -31,8 +31,6 @@
 #rsvp-form {
   border: 2px solid $main-gold;
   border-radius: 5px;
-  max-width: 700px;
-  margin: auto;
   padding: 0 30px;
   margin-bottom: 2rem;
 
@@ -63,6 +61,11 @@
       margin-top: 20px;
     }
   }
+
+  #rsvp {
+    max-width: 700px;
+    margin: auto;
+  }
 }
 
 @media (max-width: $screen-md-min) {
@@ -87,6 +90,10 @@
 
   #where {
     padding-bottom: 2rem;
+  }
+
+  #rsvp {
+    border-bottom: none;
   }
 }
 

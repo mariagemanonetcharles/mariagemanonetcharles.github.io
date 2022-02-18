@@ -2858,7 +2858,7 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
 
 #footer p { margin: 0; font-size: 13px; }
 
-#rsvp-form { border: 2px solid #C9B273; border-radius: 5px; max-width: 700px; margin: auto; padding: 0 30px; margin-bottom: 2rem; }
+#rsvp-form { border: 2px solid #C9B273; border-radius: 5px; padding: 0 30px; margin-bottom: 2rem; }
 #rsvp-form label { font-weight: 600px !important; }
 #rsvp-form small { font-weight: 200; font-size: 50%; text-transform: uppercase; }
 
@@ -2866,12 +2866,14 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
 
 .btn-block { display: block; }
 
-@media (min-width: 767px) { .section .text { margin-top: 20px; } }
+@media (min-width: 767px) { .section .text { margin-top: 20px; }
+  #rsvp { max-width: 700px; margin: auto; } }
 @media (max-width: 768px) { #rsvp-form { padding: 0 20px; }
   .section { border-bottom: 1px solid #C9B273; margin-bottom: 20px; }
   .blockquote { margin: 2rem; }
   #what .text { margin-top: 20px; }
-  #where { padding-bottom: 2rem; } }
+  #where { padding-bottom: 2rem; }
+  #rsvp { border-bottom: none; } }
 #where #map { width: inherit; border: 5px solid #C9B273; height: 350px; }
 #where .blockquote { font-size: 25px; }
 

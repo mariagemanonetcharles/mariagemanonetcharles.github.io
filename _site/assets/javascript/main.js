@@ -34,6 +34,7 @@ $(window).on('load', function(){
                  $("#rsvp-error").addClass("d-none");
                  $("#rsvp-success").removeClass("d-none");
                  $this.find('.btn').attr('disabled', false);
+                 $this.trigger('reset');
              }
          }).fail(function (data) {
              $("#rsvp-error").removeClass("d-none");
