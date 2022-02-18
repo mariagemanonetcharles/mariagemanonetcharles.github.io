@@ -19,28 +19,25 @@ $(window).on('load', function(){
          var $this = $(this);
          var data = $this.serialize();
          console.log(data);
-         $this.attr('disabled', true);
+         $this.find('.btn').attr('disabled', true);
 
-         $.ajax({
-             type: "POST",
-             crossDomain: true,
-             url: 'https://script.google.com/macros/s/AKfycbyWUcWRVaXmVbxYekchxGjQnAfs-mBPfyCUOSSVI2QvhvqPvPNN7FrIcCTIM5454Am1/exec',
-             data: data,
-             dataType: "json"
-         }).done(function (data) {
+         $.post(
+             'https://script.google.com/macros/s/AKfycbwhyQycN9172lWdbqRfQbRGKDGxVvDv1vkaG0i-FUX18U2nlYHndTq-0lER1R34FIQ/exec',
+             data
+         ).done(function (data) {
              console.log(data);
-             console.log(data.result);
              if (data.result === "error") {
-                 console.log(data.message)
                  $("#rsvp-success").addClass("d-none");
                  $("#rsvp-error").removeClass("d-none");
+                 $this.find('.btn').attr('disabled', false);
              } else {
                  $("#rsvp-error").addClass("d-none");
                  $("#rsvp-success").removeClass("d-none");
+                 $this.find('.btn').attr('disabled', false);
              }
          }).fail(function (data) {
-             console.log(data);
              $("#rsvp-error").removeClass("d-none");
+             $this.find('.btn').attr('disabled', false);
          });
      });
 })

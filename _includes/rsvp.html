@@ -1,62 +1,61 @@
-<div class="container py-5 text-center" id="rsvp">
-  <h3>
-    Merci de nous faire part de votre présence ou absence avant le <strong>1er juin 2022</strong>
-    en nous envoyant un courriel à <a href="mailto:manon.deloupy@gmail.com?subject=RSVP - Mariage Manon et Charles&body=Mon nom et celui de mon accompagnant:">manon.deloupy@gmail.com</a>
-  </h3>
+<div class="container" id="rsvp">
+  <!-- <h3> -->
+  <!--   Merci de nous faire part de votre présence ou absence avant le <strong>1er juin 2022</strong> -->
+  <!--   en nous envoyant un courriel à <a href="mailto:manon.deloupy@gmail.com?subject=RSVP - Mariage Manon et Charles&body=Mon nom et celui de mon accompagnant:">manon.deloupy@gmail.com</a> -->
+  <!-- </h3> -->
 
-  <p class="py-3">
-    Nous vous enverrons un courriel sous peu avec toutes les informations pratiques pour le jour J.
-    N'hésitez pas à nous contacter d'ici là si vous avez des questions. Nous avons hate de vous voir !
+  <!-- <p class="py-3"> -->
+  <!--   Nous vous enverrons un courriel sous peu avec toutes les informations pratiques pour le jour J. -->
+  <!--   N'hésitez pas à nous contacter d'ici là si vous avez des questions. Nous avons hate de vous voir ! -->
+  <!-- </p> -->
+
+  <p class="py-3 text">
+    Merci de nous faire part de votre présence ou absence avant le <strong>1er juin 2022</strong>
+    en remplissant le formulaire ci-dessous.
   </p>
 
-  <div class="d-none">
-    <p class="py-3 text">
-      Merci de nous faire part de votre présence ou absence avant le <strong>1er juin 2022</strong>
-      en remplissant le formulaire ci-dessous.
-    </p>
-
-    <div id="rsvp-success" class="alert alert-success d-none">
-      Nous avons bien reçu votre réponse. Nous vous contacterons par courriel avec l'horaire et tous les détails utiles pour que cette belle journée se passe au mieux.
-      Nous avons hate de vous y voir !
-    </div>
-
-    <div id="rsvp-error" class="alert alert-danger d-none">
-      Votre réponse n'a malheureusement pas pu être sauvegardée.
-      Merci de nous envoyer votre réponse avec votre nom, votre adresse courriel et le nom de votre accompagnant par courriel.
-    </div>
-
-    <form id="rsvp-form" action="" method="POST">
-      <div class="form-group mt-4">
-        <label for="name" class="col-form-label-lg">
-          Votre nom complet
-          <small class="required">Obligatoire</small>
-        </label>
-        <input type="text" name="name" class="form-control form-control-lg" id="name" required>
-      </div>
-
-      <div class="form-group mt-4">
-        <label for="name2" class="col-form-label-lg">
-          Nom de votre accompagnant
-        </label>
-        <input type="text" name="name2" class="form-control form-control-lg" id="name2">
-      </div>
-
-      <div class="form-group mt-4">
-        <label for="email" class="col-form-label-lg">
-          Votre courriel
-          <small class="required">Obligatoire</small>
-        </label>
-        <input type="email" name="email" class="form-control form-control-lg" id="email" required>
-      </div>
-
-      <div class="form-group mt-4">
-        <label for="message" class="col-form-label-lg">Si vous souhaitez nous laisser un petit message</label>
-        <textarea type="message" name="message" class="form-control form-control-lg" id="message"></textarea>
-      </div>
-
-      <div class="form-group mt-4">
-        <input class="btn btn-lg btn-gold btn-block" type="submit" value="Je serai présent">
-      </div>
-    </form>
+  <div id="rsvp-success" class="alert alert-success d-none">
+    Nous avons bien reçu votre réponse. Nous vous contacterons par courriel avec l'horaire et tous les détails utiles pour que cette belle journée se passe au mieux.
+    <br>
+    Nous avons hate de vous y voir !
   </div>
+
+  <div id="rsvp-error" class="alert alert-danger d-none">
+    Votre réponse n'a malheureusement pas pu être sauvegardée.
+    Merci de nous envoyer votre réponse par courriel à <a href="mailto:manon.deloupy@gmail.com?subject=RSVP - Mariage Manon et Charles&body=Mon nom et celui de mon accompagnant:">manon.deloupy@gmail.com</a>.
+  </div>
+
+  <form id="rsvp-form" action="" method="POST">
+    <div class="form-group mt-4">
+      <label for="name" class="col-form-label-lg">
+        Votre nom complet
+        <small class="required">Obligatoire</small>
+      </label>
+      <input type="text" name="name" class="form-control form-control-lg" id="name" required>
+    </div>
+
+    <div class="form-group mt-4">
+      <label for="name2" class="col-form-label-lg">
+        Nom de votre accompagnant
+      </label>
+      <input type="text" name="name2" class="form-control form-control-lg" id="name2">
+    </div>
+
+    <div class="form-group mt-4">
+      <label for="email" class="col-form-label-lg">
+        Votre courriel
+        <small class="required">Obligatoire</small>
+      </label>
+      <input type="email" name="email" class="form-control form-control-lg" id="email" required>
+    </div>
+
+    <div class="form-group mt-4">
+      <label for="message" class="col-form-label-lg">Si vous souhaitez nous laisser un petit message</label>
+      <textarea type="message" name="message" class="form-control form-control-lg" id="message"></textarea>
+    </div>
+
+    <div class="form-group mt-4">
+      <input class="btn btn-lg btn-gold btn-block" type="submit" value="Je serai présent">
+    </div>
+  </form>
 </div>
