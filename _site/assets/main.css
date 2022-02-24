@@ -2855,6 +2855,7 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
 #what { margin-top: 10px; }
 #what h1 { font-size: 3.5rem; }
 #what #main-pic { width: inherit; border: 5px solid #C9B273; }
+#what .text { margin-top: 20px; }
 
 #footer p { margin: 0; font-size: 13px; }
 
@@ -2862,16 +2863,17 @@ legend { font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont
 #rsvp-form label { font-weight: 600px !important; }
 #rsvp-form small { font-weight: 200; font-size: 50%; text-transform: uppercase; }
 
+.section { border-bottom: 1px solid #C9B273; }
 .section .text { text-align: justify; }
 
 .btn-block { display: block; }
 
-@media (min-width: 767px) { .section .text { margin-top: 20px; }
-  #rsvp { max-width: 700px; margin: auto; } }
+@media (min-width: 767px) { #what { padding-bottom: 20px; }
+  #rsvp { padding-top: 20px; max-width: 700px; margin: auto; border: none; }
+  #where { padding-top: 20px; } }
 @media (max-width: 768px) { #rsvp-form { padding: 0 20px; }
-  .section { border-bottom: 1px solid #C9B273; margin-bottom: 20px; }
+  .section { margin-bottom: 20px; }
   .blockquote { margin: 2rem; }
-  #what .text { margin-top: 20px; }
   #where { padding-bottom: 2rem; }
   #rsvp { border-bottom: none; } }
 #where #map { width: inherit; border: 5px solid #C9B273; height: 350px; }

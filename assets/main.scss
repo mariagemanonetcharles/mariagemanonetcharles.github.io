@@ -19,6 +19,10 @@
     width: inherit;
     border: 5px solid $main-gold;
   }
+
+  .text {
+    margin-top: 20px
+  }
 }
 
 #footer {
@@ -46,6 +50,8 @@
 }
 
 .section {
+  border-bottom: 1px solid $main-gold;
+
   .text {
     text-align: justify;
   }
@@ -56,15 +62,19 @@
 }
 
 @media (min-width: 767px) {
-  .section {
-    .text {
-      margin-top: 20px;
-    }
+  #what {
+    padding-bottom: 20px;
   }
 
   #rsvp {
+    padding-top: 20px;
     max-width: 700px;
     margin: auto;
+    border: none;
+  }
+
+  #where {
+    padding-top: 20px;
   }
 }
 
@@ -74,18 +84,12 @@
   }
 
   .section {
-    border-bottom: 1px solid $main-gold;
+    // border-bottom: 1px solid $main-gold;
     margin-bottom: 20px;
   }
 
   .blockquote {
     margin: 2rem;
-  }
-
-  #what {
-    .text {
-      margin-top: 20px;
-    }
   }
 
   #where {
