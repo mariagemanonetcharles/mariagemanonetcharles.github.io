@@ -90,7 +90,7 @@
     margin: auto;
   }
 
-  #where {
+  #where, #faq {
     padding: 20px 0;
   }
 
@@ -146,4 +146,8 @@
 .btn-gold {
   background-color: $main-gold;
   border-color: $main-gold;
+}
+
+.border-warning {
+  border-color: $main-gold !important;
 }
